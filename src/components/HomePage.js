@@ -30,14 +30,7 @@ export default function HomePage() {
   }, [images.length]);
 
   return (
-    <>
-      {/* Apply Jost font globally */}
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
-        * {
-          font-family: 'Jost', sans-serif;
-        }
-      `}</style>
+   
 
       <Box sx={{ backgroundColor: '#f0f4f8' }}>
         
