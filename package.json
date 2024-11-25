@@ -29,5 +29,8 @@
   "start": "next start",
   "lint": "next lint"
 }
+"engines": {
+  "node": ">=14"
+}
 
 }
