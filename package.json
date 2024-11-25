@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/react": "^19.0.0",
+    "@emotion/styled": "^19.0.0",
     "@mui/material": "^6.1.6",
     "mongoose": "^8.8.1",
     "next": "15.0.3",
