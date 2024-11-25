@@ -1,0 +1,244 @@
+.container {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  min-height: 100vh;
+  margin-top: 100px;
+  background: url(/images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #333;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 150px;
+}
+
+/* Fixed header styling */
+.fixedHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(135deg, #e8f5ff, #cde1f9);
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fixedHeader.scrolled {
+  background: linear-gradient(135deg, #e8f5ff, #cde1f9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #032a57;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Input and Button styling */
+.input {
+  font-family: 'Lato', sans-serif;
+  padding: 12px;
+  width: 240px;
+  border-radius: 10px;
+  border: 1px solid #032a57;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 112, 243, 0.5);
+}
+
+.button {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 24px;
+  background-color: #032a57;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #032a57;
+}
+
+/* Timeline container styling */
+.timeline {
+  margin-top: 150px !important;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 auto;
+  height: 70vh;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* Timeline event styling */
+.timelineEvent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f5ff, #cde1f9);
+  padding: 30px;
+  border-radius: 20px;
+  width: 450px !important;
+  height: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.timelineEvent:hover {
+  transform: scale(1.05);
+}
+
+/* Event content styling */
+.eventContent {
+  text-align: center;
+}
+
+/* Date styling */
+.eventDate {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #032a57;
+  margin-bottom: 8px;
+}
+
+/* Description styling */
+.eventDescription {
+  font-family: 'Lato', sans-serif;
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Link styling */
+.eventLink {
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #032a57;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.eventLink:hover {
+  background: #032a57;
+}
+
+/* Image styling */
+.eventImage {
+  width: 100%;
+  max-width: 550px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollbar styling */
+.timeline::-webkit-scrollbar {
+  width: 10px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #032a57;
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  color: #032a57;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: url('/images/earth_background.svg') no-repeat center/cover;
+  opacity: 0.15;
+  transform: translateX(-50%);
+}
+
+.footerMessage {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+.container {
+  font-family: 'Lato';
+  font-weight: bold;
+  min-height: 100vh;
+  margin-top: 100px;
+  background: url('/images/bg1.jpg') no-repeat center center; /* Set initial background image */
+  background-size: cover;
+  color: #333;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 150px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.blueBackground {
+  background: #033f63 !important; /* Override background to solid color */
+}
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  z-index: 1000;
+  font-size: 2rem;
+  color: #333;
+}
+
